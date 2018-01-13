@@ -8,7 +8,7 @@ end
 gem 'spree', '~> 3.4.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
-gem 'spree_bank_transfer', github: "https://github.com/sean-smithy1/spree_bank_transfer.git"
+gem 'spree_bank_transfer', github: 'sean-smithy1/spree_bank_transfer.git'
 gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
 gem 'spree_digital', github: 'spree-contrib/spree_digital'
 gem 'aws-sdk', '< 3.0'
