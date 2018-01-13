@@ -1,0 +1,21 @@
+
+$text-direction: ltr;
+
+@import 'font-awesome';
+
+@import 'variables';
+@import 'mixins';
+
+@import "bootstrap";
+@import '1_elements';
+@import '2_layout';
+@import '3_sections';
+@import '4_pages';
+@import '5_components';
+@import '6_navigations';
+@import '7_blocks-widgets';
+@import '8_main-slideshow';
+@import '9_owl-carousel';
+@import '10_full-page';
+
+/*# sourceMappingURL=style.css.map */

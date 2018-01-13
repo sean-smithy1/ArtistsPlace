@@ -12,4 +12,7 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require cable.js
+//= require plugins/modernizr
+//= require theproject/template
+

@@ -8,10 +8,11 @@ end
 gem 'spree', '~> 3.4.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
+gem 'spree_bank_transfer', path: "../spree_bank_transfer"
 gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
 gem 'spree_digital', github: 'spree-contrib/spree_digital'
-gem 'spree-bank-transfer', github: 'vinsol-spree-contrib/spree_bank_transfer'
 gem 'aws-sdk', '< 3.0'
+gem 'font-awesome-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'

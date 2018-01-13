@@ -1,1 +1,28 @@
-<%= link_to_cart %>
+<div class="btn-group dropdown">
+	<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="icon-basket-1"></i><span class="cart-count default-bg"><%= simple_current_order.item_count %></span></button>
+	<ul class="dropdown-menu dropdown-menu-right dropdown-animation cart">
+		<li>
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th class="quantity">QTY</th>
+						<th class="product">Product</th>
+						<th class="amount">Subtotal</th>
+					</tr>
+				</thead>
+				<tbody>
+					<% simple_current_order.line_items.each do |item| %>
+						<tr>
+							<td class="quantity"><%= item.quantity %></td>
+							<td class="product small"><%= item.name %></td>
+							<td class="amount"><%= item.single_money.to_html %></td>
+						</tr>
+					<% end %>
+				</tbody>
+			</table>
+			<div class="panel-body text-right">
+				<%= link_to_cart %>
+			</div>
+		</li>
+	</ul>
+</div>

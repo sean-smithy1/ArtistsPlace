@@ -8,7 +8,27 @@
 <%= stylesheet_link_tag 'spree/frontend/all', media: 'screen' %>
 <%= csrf_meta_tags %>
 <%= render 'spree/shared/paths' %>
+
 <%= javascript_include_tag 'spree/frontend/all' %>
+
+<!-- JS for Home Page Slider-->
+<%= javascript_include_tag 'plugins/rs-plugin-5/index.js' %>
+
+<%= javascript_include_tag "plugins/modernizr.js" %>
+<%= javascript_include_tag "theproject/template.js" %>
+
+<!-- CSS for Home Page Slider-->
+<%= stylesheet_link_tag "plugins/rs-plugin-5/css/settings.css" %>
+<%= stylesheet_link_tag "plugins/rs-plugin-5/css/layers.css" %>
+<%= stylesheet_link_tag "plugins/rs-plugin-5/css/navigation.css" %>
+<%= stylesheet_link_tag "fontello/css/fontello.css" %>
+
+<!-- Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
 <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
 <![endif]-->

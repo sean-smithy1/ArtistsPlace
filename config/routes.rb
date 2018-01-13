@@ -9,4 +9,10 @@ Rails.application.routes.draw do
   # the default of "spree".
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # Static Content Pages
+  Spree::Core::Engine.routes.draw do
+    get 'privacy_policy', to: 'static_pages#privacy_policy'
+    get 'about', to: 'static_pages#about'
+  end
 end

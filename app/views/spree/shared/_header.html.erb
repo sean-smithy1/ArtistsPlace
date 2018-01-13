@@ -1,15 +1,16 @@
-<div id="spree-header">
-  <header id="header" data-hook>
-    <div class="container">
-      <div class="row">
-        <figure id="logo" class="col-md-4 col-sm-3" data-hook>
-          <%= logo %>
-        </figure>
-        <%= render partial: 'spree/shared/nav_bar' %>
+        <!-- header start -->
+        <!-- classes:  -->
+        <!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
+        <!-- "dark": dark version of header e.g. class="header dark clearfix" -->
+        <!-- "full-width": mandatory class for the full-width menu layout -->
+        <!-- "centered": mandatory class for the centered logo layout -->
+        <!-- ================ --> 
+      <div id="spree-header">
+        <header class="header fixed clearfix" id="header" data-hook>
+          <%= render partial: 'spree/shared/main_nav_bar' %>
+        </header>
+        <!-- header end -->
       </div>
     </div>
-  </header>
-  <div class="container">
-    <%= render partial: 'spree/shared/main_nav_bar' %>
-  </div>
-</div>
+      <!-- header-container end -->
+

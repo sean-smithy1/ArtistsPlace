@@ -2,6 +2,22 @@
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
+Rails.application.config.assets.precompile += %w( payment_details.png )
+
+Rails.application.config.assets.precompile
+
+Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "fonts")
+Rails.application.config.assets.precompile += %w( fontello/css/fontello.css )
+
+# Precompile Vendor JS Assets 
+Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/index.js )
+Rails.application.config.assets.precompile += %w( plugins/modernizr.js )
+Rails.application.config.assets.precompile += %w( theproject/template.js )
+
+# PreCompile Vendor CSS Assets
+Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/css/layers.css )
+Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/css/navigation.css )
+Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/css/settings.css )
 
 # Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path

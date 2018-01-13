@@ -10,6 +10,7 @@
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <%= render partial: 'spree/shared/google_analytics.js' %>
     <%= render partial: 'spree/shared/trackers/segment/initializer.js' %>
+    <%= render partial: 'spree/shared/header_top' %>
     <%= render partial: 'spree/shared/header' %>
 
     <div class="container">
@@ -17,7 +18,7 @@
         <%= breadcrumbs(@taxon) %>
 
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
-
+        
         <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
           <%= flash_messages %>
           <%= yield %>
@@ -27,4 +28,5 @@
       </div>
     </div>
   </body>
+  <%= render partial: 'spree/shared/footer' %>
 </html>
