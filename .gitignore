@@ -20,6 +20,7 @@ pgsql
 config/*-public.asc
 config/database.yml
 config/mongrel_cluster.yml
+config/secrets.yml
 db/*.sql
 db/*.sqlite3*
 db/schema.rb
@@ -57,3 +58,4 @@ test_app
 .ruby-gemset
 vendor/bundle
 */vendor/bundle
+
