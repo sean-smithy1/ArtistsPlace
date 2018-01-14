@@ -13,6 +13,6 @@
 //= require rails-ujs
 //= require turbolinks
 //= require cable.js
-//= require plugins/modernizr
-//= require theproject/template
+// require plugins/modernizr
+// require theproject/template
 

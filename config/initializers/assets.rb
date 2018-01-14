@@ -6,7 +6,7 @@ Rails.application.config.assets.precompile += %w( payment_details.png )
 
 Rails.application.config.assets.precompile
 
-Rails.application.config.assets.paths << Rails.root.join("vendor", "assets", "fonts")
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
 Rails.application.config.assets.precompile += %w( fontello/css/fontello.css )
 
 # Precompile Vendor JS Assets 
