@@ -4,14 +4,14 @@
 Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( payment_details.png )
 
-Rails.application.config.assets.precompile
+#Rails.application.config.assets.precompile
 
 # Precompile Vendor JS Assets 
 Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/index.js )
 Rails.application.config.assets.precompile += %w( plugins/modernizr.js )
 Rails.application.config.assets.precompile += %w( theproject/template.js )
 
-
+Rails.application.config.assets.precompile += %w( fontello/css/fontello.css )
 Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/css/layers.css )
 Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/css/navigation.css )
 Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/css/settings.css )
