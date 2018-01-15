@@ -8,7 +8,6 @@ Rails.application.config.assets.precompile += %w( payment_details.png )
 
 # Precompile Vendor JS Assets 
 Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/index.js )
-Rails.application.config.assets.precompile += [ 'plugins/rs-plugin-5/fonts/revicons/*' ]
 Rails.application.config.assets.precompile += %w( plugins/modernizr.js )
 Rails.application.config.assets.precompile += %w( theproject/template.js )
 

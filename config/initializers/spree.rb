@@ -23,7 +23,7 @@ attachment_config = {
   s3_credentials: {
     access_key_id:     Rails.application.secrets[:aws_access_key],
     secret_access_key: Rails.application.secrets[:aws_secret_access_key],
-    bucket:            'dev-artistsplace'
+    bucket:            Rails.application.secrets[:aws_bucket]
   },
 
   storage:        :s3,

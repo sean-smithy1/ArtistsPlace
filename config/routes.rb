@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   # Static Content Pages
   Spree::Core::Engine.routes.draw do
+    root 'home#landing'
     get 'privacy_policy', to: 'static_pages#privacy_policy'
     get 'about', to: 'static_pages#about'
   end
