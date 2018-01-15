@@ -30,7 +30,7 @@ attachment_config = {
   s3_region:      "ap-southeast-2",
   s3_headers:     { "Cache-Control" => "max-age=31557600" },
   s3_protocol:    "https",
-  bucket:         'dev-artistsplace',
+  bucket:         Rails.application.secrets[:aws_bucket],
   url:            ":s3_domain_url",
 
   styles: {
