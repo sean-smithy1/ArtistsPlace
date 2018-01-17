@@ -6,6 +6,25 @@ Rails.application.config.assets.precompile += %w( payment_details.png )
 
 #Rails.application.config.assets.precompile
 
+
+# Standalone Coming_soon Page
+# Remove After Launch
+Rails.application.config.assets.precompile += %w( plugins/jquery.min.js )
+Rails.application.config.assets.precompile += %w( plugins/bootstrap.min.js )
+Rails.application.config.assets.precompile += %w( plugins/jquery.countdown/*.js plugins/jquery.countdown/*.css )
+Rails.application.config.assets.precompile += %w( plugins/magnific-popup/jquery.magnific-popup.min.js plugins/magnific-popup/*.css )
+Rails.application.config.assets.precompile += %w( plugins/owlcarousel2/*.js plugins/owlcarousel2/*.css )
+Rails.application.config.assets.precompile += %w( css/*.scss )
+Rails.application.config.assets.precompile += %w( js/coming.soon.config.js js/template.js )
+Rails.application.config.assets.precompile += %w( css/style.css css/typography-default.css css/skins/light_blue.css css/animations.css )
+Rails.application.config.assets.precompile += %w( plugins/bootstrap/css/bootstrap.min.css )
+Rails.application.config.assets.precompile += %w( plugins/jquery.countTo.js )
+Rails.application.config.assets.precompile += %w( plugins/waypoints/jquery.waypoints.min.js )
+Rails.application.config.assets.precompile += %w( plugins/hover/hover.css plugins/hover/hover-min.js)
+Rails.application.config.assets.precompile += %w( plugins/jquery.parallax-1.1.3.js )
+Rails.application.config.assets.precompile += %w( plugins/jquery.validate.js )
+
+
 # Precompile Vendor JS Assets 
 Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/index.js )
 Rails.application.config.assets.precompile += %w( plugins/modernizr.js )

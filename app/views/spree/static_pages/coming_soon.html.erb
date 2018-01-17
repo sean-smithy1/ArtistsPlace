@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="zxx" class="ie9"> <![endif]-->
+<!--[if gt IE 9]> <html lang="zxx" class="ie"> <![endif]-->
+<!--[if !IE]><!-->
+<html dir="ltr" lang="zxx">
+	<!--<![endif]-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Artists Place | Coming Soon</title>
+		<meta name="description" content="Artists Place">
+		<meta name="author" content="htmlcoder.me">
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Web Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+		<!-- Bootstrap core CSS -->
+		<%= stylesheet_link_tag "plugins/bootstrap/css/bootstrap.min.css" %>
+
+		<!-- Font Awesome CSS -->
+		
+
+		<!-- Fontello CSS -->
+		<%= stylesheet_link_tag "fontello/css/fontello.css" %>
+
+		<!-- Plugins -->
+		<%= stylesheet_link_tag "plugins/magnific-popup/magnific-popup.css" %>
+		<%= stylesheet_link_tag "css/animations.css" %>
+		<%= stylesheet_link_tag "plugins/owlcarousel2/assets/owl.carousel.min.css" %>
+		<%= stylesheet_link_tag "plugins/owlcarousel2/assets/owl.theme.default.min.css" %>
+		<%= stylesheet_link_tag "plugins/hover/hover.css" %>	
+		<%= stylesheet_link_tag "plugins/jquery.countdown/css/jquery.countdown.css" %>
+		<!-- The Project's core CSS file -->
+		<!-- Use css/rtl_style.css for RTL version -->
+		<%= stylesheet_link_tag "css/style.css" %>
+		<!-- The Project's Typography CSS file, includes used fonts -->
+		<!-- Used font for body: Roboto -->
+		<!-- Used font for headings: Raleway -->
+		<!-- Use css/rtl_typography-default.css for RTL version -->
+		<%= stylesheet_link_tag "css/typography-default.css" %>
+		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
+		<%= stylesheet_link_tag "css/skins/light_blue.css" %>
+		
+
+		<!-- Custom css --> 
+
+	</head>
+
+	<!-- body classes:  -->
+	<!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
+	<!-- "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> -->
+	<!-- "transparent-header": makes the header transparent and pulls the banner to top -->
+	<!-- "gradient-background-header": applies gradient background to header -->
+	<!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
+	<body class="no-trans    ">
+
+		<!-- scrollToTop -->
+		<!-- ================ -->
+		<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
+		
+		<!-- page wrapper start -->
+		<!-- ================ -->
+		<div class="page-wrapper">
+		
+			<!-- background image -->
+			<div class="fullscreen-bg"></div>
+
+			<!-- banner start -->
+			<!-- ================ -->
+			<div class="pv-40 dark-translucent-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 text-center col-md-offset-2 pv-20">
+							<div class="object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">
+								<!-- logo -->
+								<div id="logo" class="logo text-center">
+									<h3 class="margin-clear"><a href="index.html" class="logo-font link-light">Artists <span class="text-default">Place</span></a></h3>
+								</div>
+								<!-- name-and-slogan -->
+								<p class="small">Australian Online Art Gallery</p>
+								<h1 class="page-title text-center">Coming Soon</h1>
+								<div class="separator"></div>
+								<p class="text-center">Featuring Original Art by Brisbane artist Phyllis Smith.</br>We are starting small but dreaming big.</p>
+								<ul class="list-inline mb-20 text-center">
+									<li><i class="text-default fa fa-map-marker pr-5"></i>11 Mongomary Street</li>
+									<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+61 (0)435 960 138</a></li>
+									<li><a href="mailto:info@artistsplace.com.au" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@artistsplace.com.au</a></li>
+								</ul>
+								<!-- countdown start -->
+								<div class="countdown clearfix"></div>
+								<!-- countdown end -->
+								
+							</div> 
+						</div>
+					</div>
+					<!-- .subfooter start -->
+					<!-- ================ -->
+					<p class="text-center object-non-visible" data-animation-effect="fadeIn" data-effect-delay="100">Copyright © 2017 Commercial Applications <a target="_blank" href="https://www.comapps.net"></a>. All Rights Reserved</p>
+					<!-- .subfooter end -->
+				</div>
+			</div>
+			<!-- banner end -->
+
+
+			
+		</div>
+		<!-- page-wrapper end -->
+
+		<!-- JavaScript files placed at the end of the document so the pages load faster -->
+		<!-- ================================================== -->
+		<!-- Jquery and Bootstap core js files -->
+		<%= javascript_include_tag "plugins/jquery.min.js" %>
+		<%= javascript_include_tag "plugins/bootstrap.min.js" %>
+		
+
+		<!-- Modernizr javascript -->
+		<%= javascript_include_tag "plugins/modernizr.js" %>
+		<!-- Magnific Popup javascript -->
+		<%= javascript_include_tag "plugins/magnific-popup/jquery.magnific-popup.min.js" %>
+		<!-- Appear javascript -->
+		<%= javascript_include_tag "plugins/waypoints/jquery.waypoints.min.js" %>
+		<!-- Count To javascript -->
+		<%= javascript_include_tag "plugins/jquery.countTo.js" %>
+		<!-- Parallax javascript -->
+		<%= javascript_include_tag "plugins/jquery.parallax-1.1.3.js" %>
+		<!-- Contact form -->
+		<%= javascript_include_tag "plugins/jquery.validate.js" %>
+		<!-- Owl carousel javascript -->
+		<%= javascript_include_tag "plugins/owlcarousel2/owl.carousel.min.js" %>
+		<!-- Count Down javascript -->
+		<%= javascript_include_tag "plugins/jquery.countdown/js/jquery.plugin.js" %>
+		<%= javascript_include_tag "plugins/jquery.countdown/js/jquery.countdown.js" %>
+		<%= javascript_include_tag "js/coming.soon.config.js" %>
+		<!-- Initialization of Plugins -->
+		<%= javascript_include_tag "js/template.js" %>
+
+	</body>
+</html>

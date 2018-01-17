@@ -15,5 +15,6 @@ Rails.application.routes.draw do
     root 'home#landing'
     get 'privacy_policy', to: 'static_pages#privacy_policy'
     get 'about', to: 'static_pages#about'
+    get 'coming_soon', to: 'static_pages#coming_soon'
   end
 end
