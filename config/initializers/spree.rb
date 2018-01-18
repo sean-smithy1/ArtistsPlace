@@ -21,9 +21,14 @@ Spree.user_class = "Spree::LegacyUser"
 attachment_config = {
 
   s3_credentials: {
+
     access_key_id:     Rails.application.secrets[:aws_access_key],
+#    access_key_id:     ENV['AWS_ACCESS_KEY_ID'],
     secret_access_key: Rails.application.secrets[:aws_secret_access_key],
+#    secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
     bucket:            Rails.application.secrets[:aws_bucket]
+#    bucket:            ENV['AWS_BUCKET']
+  
   },
 
   storage:        :s3,
@@ -36,7 +41,7 @@ attachment_config = {
   styles: {
       mini:     "48x48>",
       small:    "100x100>",
-      product:  "240x240>",
+      product:  "375x375>",
       large:    "600x600>"
   },
 
@@ -48,3 +53,4 @@ attachment_config = {
 attachment_config.each do |key, value|
   Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
 end
+
