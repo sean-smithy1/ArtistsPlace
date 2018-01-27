@@ -1,0 +1,7 @@
+---
+:Spree::Image:
+  :attachment:
+  - :large
+  - :mini
+  - :product
+  - :small
