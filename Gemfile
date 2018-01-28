@@ -11,6 +11,8 @@ gem 'spree_gateway', '~> 3.3'
 gem 'spree_bank_transfer', github: 'sean-smithy1/spree_bank_transfer'
 gem 'spree_multi_currency', github: 'spree-contrib/spree_multi_currency'
 gem 'spree_digital', github: 'spree-contrib/spree_digital'
+gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
+
 gem 'aws-sdk', '< 3.0'
 gem 'font-awesome-rails'
 
