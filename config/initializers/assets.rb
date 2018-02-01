@@ -29,6 +29,7 @@ Rails.application.config.assets.precompile += %w( plugins/jquery.validate.js )
 Rails.application.config.assets.precompile += %w( plugins/rs-plugin-5/index.js )
 Rails.application.config.assets.precompile += %w( plugins/modernizr.js )
 Rails.application.config.assets.precompile += %w( plugins/magnific-popup/jquery.magnific-popup.min.js plugins/magnific-popup/*.css )
+Rails.application.config.assets.precompile += %w( plugins/isotope/isotope.pkgd.min.js plugins/isotope/imagesloaded.pkgd.min.js )
 Rails.application.config.assets.precompile += %w( theproject/template.js )
 
 Rails.application.config.assets.precompile += %w( fontello/css/fontello.css )
