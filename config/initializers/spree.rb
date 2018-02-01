@@ -39,7 +39,7 @@ Spree.user_class = "Spree::LegacyUser"
 
     :styles => {
         :mini =>    "48x48>",
-        :small =>   "375",
+        :small =>   "100x100>",
         :product =>  "375",
         :large =>    "600x600>"
     },
