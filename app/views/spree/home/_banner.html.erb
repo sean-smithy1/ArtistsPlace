@@ -10,147 +10,248 @@
 					<!-- slider revolution start -->
 					<!-- ================ -->
 					<div class="slider-revolution-5-container">
-						<div id="slider-banner-fullscreen" class="slider-banner-fullscreen rev_slider" data-version="5.0">
+						<div id="slider-banner-fullscreen" class="slider-banner-fullscreen rev_slider" data-version="5.4.5">
 							<ul class="slides">
 								<!-- slide 1 start -->
 								<!-- ================ -->
-								<li class="text-center" data-transition="random" data-slotamount="default" data-masterspeed="default" data-title="Unlimited Options and Layouts">
+								<li class="text-center" data-transition="random-premium" data-slotamount="default" data-masterspeed="default" data-title="Where is an Artists Place?">
 
 								<!-- main image -->
 								
-								<%= image_tag("slider-fullscreen-slide-1.jpg", alt: "slidebg1", class: "rev-slidebg", data: {bgposition: "center center", bgrepeat: "no-repeat", bgfit: "cover"}) %>
+								<%= image_tag("slider-fullscreen-slide.jpeg", alt: "Photo by Daian Gan from Pexels https://www.pexels.com/photo/brush-painting-color-paint-102127/", class: "rev-slidebg", data: {bgposition: "center center", bgrepeat: "no-repeat", bgfit: "cover"}) %>
 
 								<!-- Transparent Background -->
 								<div class="tp-caption dark-translucent-bg"
+									data-frames='[{
+										"delay":0,
+										"speed":600,
+										"from":"opacity:0",
+										"to":"o:1",
+										"ease":"Power2.easeInOut"
+									},
+									{
+										"delay":"wait",
+										"speed":600,
+										"to":"o:0"
+									}]'
 									data-x="center"
 									data-y="center"
-									data-start="0"
 									data-transform_idle="o:1;"
-									data-transform_in="o:0;s:600;e:Power2.easeInOut;"
-									data-transform_out="o:0;s:600;"
+
 									data-width="5000"
 									data-height="5000">
 								</div>
 								
 								<!-- LAYER NR. 1 -->
-								<div class="tp-caption xlarge_white"
+		 						<div class="tp-caption xlarge_white"
+									data-frames='[
+									{
+										"delay":0,
+										"speed":1200,
+										"frame":"0",
+										"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;",
+										"to":"o:1;",
+										"ease":"Power4.easeOut"
+									},
+									{
+										"delay":"1000",
+										"speed":800,
+										"frame":"0",
+										"to":"o:0;",
+										"ease":"Power3.easeInOut"
+									}
+									]'
 									data-x="center"
-									data-y="110"
-									data-start="1000"
-									data-end="2500"
-									data-splitin="chars"
-									data-splitout="chars"
-									data-elementdelay="0.1"
-									data-endelementdelay="0.1"
-									data-transform_idle="o:1;"
-									data-transform_in="x:[50%];o:0;s:600;e:Power4.easeInOut;"
-									data-transform_out="x:[-50%];o:0;s:200;e:Power2.easeInOut;"
-									data-mask_in="x:0;y:0;s:inherit;e:inherit;"
-									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">Inspire
+									data-y="center">Where is an Artists Place?
 								</div>
 
 								<!-- LAYER NR. 2 -->
 								<div class="tp-caption xlarge_white"
+									data-frames='[
+									{ 
+										"delay":3200,
+										"speed":1200,
+										"frame":"0",
+										"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;",
+										"to":"o:1;",
+										"ease":"Power4.easeOut"
+									},
+									{ 
+										"delay":"0",
+										"speed":800,
+										"frame":"999",
+										"to":"o:0;",
+										"ease":"Power3.easeInOut"
+									}]'
 									data-x="center"
-									data-y="110"
-									data-start="3100"
-									data-end="4600"
-									data-splitin="chars"
-									data-splitout="chars"
-									data-elementdelay="0.1"
-									data-endelementdelay="0.1"
-									data-transform_idle="o:1;"
-									data-transform_in="x:[-50%];o:0;s:600;e:Power4.easeInOut;"
-									data-transform_out="x:[-50%];o:0;s:200;e:Power2.easeInOut;"
-									data-mask_in="x:0;y:0;s:inherit;e:inherit;"
-									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">Move
+									data-y="center"
+									data-voffset="-200">At an Easel?
 								</div>
 
 								<!-- LAYER NR. 3 -->
 								<div class="tp-caption xlarge_white"
-									data-x="center"
-									data-y="110"
-									data-start="5200"
-									data-end="6700"
-									data-splitin="chars"
-									data-splitout="chars"
-									data-elementdelay="0.1"
-									data-endelementdelay="0.1"
-									data-transform_idle="o:1;"
-									data-transform_in="x:[50%];o:0;s:600;e:Power4.easeInOut;"
-									data-transform_out="x:0;y:[-50%];o:0;s:200;e:Power2.easeInOut;"
-									data-mask_in="x:0;y:0;s:inherit;e:inherit;"
-									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">Success
+									data-frames='[
+									{ 
+										"delay":5200,
+										"speed":1200,
+										"frame":"0",
+										"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;",
+										"to":"o:1;",
+										"ease":"Power4.easeOut"
+									},
+									{ 
+										"delay":"0",
+										"speed":800,
+										"frame":"999",
+										"to":"o:0;",
+										"ease":"Power3.easeInOut"
+									}
+								]'
+								data-x="center"
+								data-y="center"
+								data-voffset="-200">In the workshop?
 								</div>
 
-								<!-- LAYER NR. 4 -->			
-		 						<div class="tp-caption large_white"
+								<!-- LAYER NR. 4 -->
+								<div class="tp-caption xlarge_white"
+									data-frames='[
+									{
+										"delay":7200,
+										"speed":1200,
+										"frame":"0",
+										"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;",
+										"to":"o:1;",
+										"ease":"Power4.easeOut" 
+									},
+									{ 
+										"delay":"0",
+										"speed":800,
+										"frame":"0",
+										"to":"o:0;",
+										"ease":"Power3.easeInOut"
+									}]'
 									data-x="center"
-									data-y="110"
-									data-start="7000"
-									data-transform_idle="o:1;"
-									data-transform_in="y:[-100%];sX:1;sY:1;o:0;s:1100;e:Power4.easeInOut;"
-									data-transform_out="y:0;s:1000;e:Power2.easeInOut;"
-									data-mask_in="x:0px;y:[-100%];s:inherit;e:inherit;"
-									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"><span class="logo-font">Artists <span class="text-default">Place</span></span> <br> Original art that has the power to..
+									data-y="center"
+									data-voffset="-200">At a Potters Wheel?
 								</div>
 
-								<!-- LAYER NR. 5 -->
+<!-- Icon Fly In LAYER NR. 5 -->
 								<div class="tp-caption"
+								data-frames='[
+									{
+										"delay":3200,
+										"speed":800,
+										"frame":"0",
+										"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;",
+										"to":"o:1;",
+										"ease":"Power4.easeOut" 
+									},
+									{ 
+										"delay":"4200",
+										"speed":800,
+										"frame":"0",
+										"to":"o:0;",
+										"ease":"Power3.easeInOut"
+									}]'
 									data-x="center"
 									data-y="250"
 									data-hoffset="-232"
-									data-start="1000"
-									data-end="6200"
-									data-transform_idle="o:1;"
-									data-transform_in="x:[50%];y:0;o:0;s:700;e:Power4.easeInOut;"
-									data-transform_out="x:0;y:0;o:0;s:700;e:Power2.easeInOut;"><span class="icon large circle"><i class="circle icon-lightbulb"></i></span>
+									data-transform_idle="o:1;"><span class="icon large circle"><i class="circle icon-lightbulb"></i></span>
 								</div>
 
 								<!-- LAYER NR. 6 -->
 								<div class="tp-caption"
+									data-frames='[
+									{
+										"delay":5200,
+										"speed":800,
+										"frame":"0",
+										"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;",
+										"to":"o:1;",
+										"ease":"Power4.easeOut" 
+									},
+									{ 
+										"delay":2000,
+										"speed":800,
+										"frame":"0",
+										"to":"o:0;",
+										"ease":"Power3.easeInOut"
+									}]'
 									data-x="center"
-									data-y="250"
-									data-start="3100"
-									data-end="6200"
-									data-transform_idle="o:1;"
-									data-transform_in="x:[-50%];y:0;o:0;s:700;e:Power4.easeInOut;"
-									data-transform_out="x:0;y:0;o:0;s:700;e:Power2.easeInOut;"><span class="icon large circle"><i class="circle icon-arrows-ccw"></i></span>
+									data-y="250"><span class="icon large circle"><i class="circle icon-arrows-ccw"></i></span>
 								</div>
 
 								<!-- LAYER NR. 7 -->
 								<div class="tp-caption"
+									data-frames='[
+									{
+										"delay":7200,
+										"speed":800,
+										"frame":"0",
+										"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;",
+										"to":"o:1;",
+										"ease":"Power4.easeOut" 
+									},
+									{ 
+										"delay":0,
+										"speed":800,
+										"frame":"0",
+										"to":"o:0;",
+										"ease":"Power3.easeInOut"
+									}]'
 									data-x="center"
 									data-y="250"
-									data-hoffset="232"
-									data-start="5200"
-									data-end="6200"
-									data-transform_idle="o:1;"
-									data-transform_in="x:[50%];y:0;o:0;s:700;e:Power4.easeInOut;"
-									data-transform_out="x:0;y:0;o:0;s:700;e:Power2.easeInOut;"><span class="icon large circle"><i class="circle icon-chart-line"></i></span>
+									data-hoffset="232"><span class="icon large circle"><i class="circle icon-chart-line"></i></span>
 								</div>
 
 								<!-- LAYER NR. 8 -->
 								<div class="tp-caption tp-resizeme large_white"
+									data-frames='[
+									{
+										"delay":3200,
+										"speed":800,
+										"frame":"0",
+										"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;",
+										"to":"o:1;",
+										"ease":"Power4.easeOut" 
+									},
+									{ 
+										"delay":4200,
+										"speed":800,
+										"frame":"0",
+										"to":"o:0;",
+										"ease":"Power3.easeInOut"
+									}]'
 									data-x="center"
 									data-y="210"
-									data-start="6400"
-									data-end="10000"
+									data-start="3100"
+									data-end="8900"
 									data-transform_idle="o:1;"
 									data-transform_in="y:[-100%];sX:1;sY:1;o:0;s:1100;e:Power4.easeInOut;"
 									data-transform_out="y:0;s:1000;e:Power2.easeInOut;"><div class="separator light"></div>
 								</div>
 
 								<!-- LAYER NR. 9 -->
-								<div class="tp-caption medium_white"
+								<div class="tp-caption large_white"
+								data-frames='[
+									{ 
+										"delay":8500,
+										"speed":1200,
+										"frame":"0",
+										"from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;",
+										"to":"o:1;","ease":"Power4.easeOut"
+									},
+									{ 
+										"delay":"4000",
+										"speed":800,
+										"frame":"0",
+										"to":"o:0;",
+										"ease":"Power3.easeInOut"
+									}
+								]'
+
 									data-x="center"
-									data-y="260"
-									data-start="6800"
-									data-transform_idle="o:1;"
-									data-transform_in="y:[-50%];sX:1;sY:1;o:0;s:1100;e:Power4.easeInOut;"
-									data-transform_out="y:0;s:1000;e:Power2.easeInOut;"
-									data-mask_in="x:0px;y:[-50%];s:inherit;e:inherit;"
-									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">Artist Place is an online gallery showcasing Australian artists works,<br> we are new so we are building our stock of quality art works for sale withing Australia and overseas.
+									data-y="260">Artist Place</br>An online gallery showcasing Australian artists works
 								</div>
 
 								<!-- LAYER NR. 10 -->
@@ -158,7 +259,7 @@
 									data-x="center"
 									data-y="bottom"
 									data-voffset="100"
-									data-start="1250"
+									data-start="250"
 									data-transform_idle="o:1;"
 									data-transform_in="y:[100%];sX:1;sY:1;o:0;s:2000;e:Power4.easeInOut;"
 									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
@@ -175,7 +276,7 @@
 								<li data-transition="random" data-slotamount="7" data-masterspeed="default" data-title="Premium HTML5 Bootstrap Theme">
 
 								<!-- main image -->
-								<%= image_tag("slider-fullscreen-slide-2.jpg", alt: "slidebg2", class: "rev-slidebg", data: {bgposition: "center center", bgrepeat: "no-repeat", bgfit: "cover"}) %>
+								<%= image_tag("slider-fullscreen-slide2.jpeg", alt: "slidebg2", class: "rev-slidebg", data: {bgposition: "center center", bgrepeat: "no-repeat", bgfit: "cover"}) %>
 
 								<!-- Transparent Background -->
 								<div class="tp-caption dark-translucent-bg"
@@ -265,6 +366,21 @@
 									data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
 									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;"><a href="#" class="btn btn-default btn-lg btn-animated">Shop Now <i class="fa fa-cart-arrow-down"></i></a>
 								</div>
+
+
+								<div class="tp-caption"
+									data-x="center"
+									data-y="bottom"
+									data-voffset="100"
+									data-start="250"
+									data-transform_idle="o:1;"
+									data-transform_in="y:[100%];sX:1;sY:1;o:0;s:2000;e:Power4.easeInOut;"
+									data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
+									data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+									data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
+									<a href="#page-start" class="btn btn-lg moving smooth-scroll"><i class="icon-down-open-big"></i><i class="icon-down-open-big"></i><i class="icon-down-open-big"></i></a>
+								</div>
+
 								</li>
 								<!-- slide 2 end -->
 							</ul>
