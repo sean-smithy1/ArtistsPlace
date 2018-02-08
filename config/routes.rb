@@ -16,5 +16,8 @@ Rails.application.routes.draw do
     get 'privacy_policy', to: 'static_pages#privacy_policy'
     get 'about', to: 'static_pages#about'
     get 'coming_soon', to: 'static_pages#coming_soon'
+    resources :support_forms, only: [:new, :create]
+    resources :contact_forms, only: [:new, :create]
+    post 'support', to: 'forms#create_support'
   end
 end

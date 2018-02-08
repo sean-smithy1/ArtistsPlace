@@ -13,6 +13,7 @@ Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
+
 end
 
 Spree.user_class = "Spree::LegacyUser"
@@ -53,3 +54,4 @@ Spree.user_class = "Spree::LegacyUser"
     Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
   end
 
+#Custome Attributes for forms

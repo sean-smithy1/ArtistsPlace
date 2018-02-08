@@ -15,6 +15,7 @@ gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
 
 gem 'aws-sdk', '< 3.0'
 gem 'font-awesome-rails'
+gem "recaptcha", require: "recaptcha/rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
