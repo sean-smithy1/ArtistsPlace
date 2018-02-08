@@ -1,0 +1,114 @@
+<!-- main-container start -->
+<!-- ================ -->
+<section class="main-container">
+  <div class="container">
+    <div class="row">
+    <%= flash[:recaptcha_error] %>
+      <!-- main start -->
+      <!-- ================ -->
+      <div class="main col-lg-8 space-bottom">
+        <p class="lead">If your having a problem or have Identified somthng wrong with this site please use the contact form below to let us know.</p>
+        <div class="contact-form">
+        <%= form_for @support,  url: support_forms_path, html: { class: "margin-clear", id: "contact-form-with-recaptcha" } do |f| %>
+            <div class="form-group has-feedback">
+              <%= f.label :name, "Name*" %>
+              <%= f.text_field :name, class: "form-control", id: "name", name: "name", placeholder: "" do %>
+                <i class="fa fa-user form-control-feedback"></i>
+              <% end %>
+            </div>
+
+            <div class="form-group has-feedback">
+              <%= f.label :email, "Email*" %>
+              <%= f.email_field :email, class: "form-control", id: "email", name: "email", placeholder: "" do %>
+                <i class="fa fa-envelope form-control-feedback"></i>
+              <% end %>
+            </div>
+
+            <div class="form-group has-feedback">
+              <%= f.label :subject, "Subject*" %>
+              <%= f.text_field :subject, class: "form-control", id: "subject", name: "subject", placeholder: "" do %>
+                <i class="fa fa-navicon form-control-feedback"></i>
+              <% end %>
+            </div>
+
+            <div class="form-group has-feedback">
+              <%= f.label :message, "Message*" %>
+              <%= f.text_area :message, class: "form-control", id: "message", name: "message", placeholder: "" do %>
+                <i class="fa fa-pencil form-control-feedback"></i>
+              <% end %>
+            </div>
+            <%= recaptcha_tags %>
+            </br>
+            <%= f.submit Spree.t(:submit), class: "submit-button btn btn-default" %>
+          <% end %>
+        </div>
+      </div>
+      <!-- main end -->
+
+      <!-- sidebar start -->
+      <!-- ================ -->
+      <aside class="col-lg-3 ml-xl-auto">
+        <div class="sidebar">
+          <div class="side vertical-divider-left">
+            <h3 class="title logo-font">Artists <span class="text-default">Place</span></h3>
+            <div class="separator-2 mt-20"></div>
+            <ul class="list">
+              <li><i class="fa fa-home pr-10"></i>795 Folsom Ave, Suite 600<br><span class="pl-20">San Francisco, CA 94107</span></li>
+              <li><i class="fa fa-phone pr-10"></i><abbr title="Phone">P:</abbr> (123) 456-7890</li>
+              <li><i class="fa fa-mobile pr-10 pl-1"></i><abbr title="Phone">M:</abbr> (123) 456-7890</li>
+              <li><i class="fa fa-envelope pr-10"></i><a href="mailto:info@idea.com">info@artistsplace.com</a></li>
+            </ul>
+            <ul class="social-links circle small margin-clear clearfix animated-effect-1">
+              <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+              <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
+              <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+              <li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+              <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
+              <li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
+              <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+            <div class="separator-2 mt-20 "></div>
+          </div>
+        </div>
+      </aside>
+      <!-- sidebar end -->
+    </div>
+  </div>
+</section>
+<!-- main-container end -->
+
+<!-- section start -->
+<!-- ================ -->
+<section class="collapse" id="collapseMap">
+  <div id="map-canvas"></div>
+</section>
+<!-- section end -->
+
+<!-- section start -->
+<!-- ================ -->
+<section class="section pv-40 background-img-3 dark-translucent-bg" style="background-position:50% 77%;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="call-to-action text-center">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-8">
+              <h2 class="title">Join Us Now</h2>
+              <p>Join our mailing list, we will update you on a monthly basis on new item comming into our store.</p>
+              <div class="separator"></div>
+              <form class="form-inline margin-clear d-flex justify-content-center">
+                <div class="form-group has-feedback">
+                  <label class="sr-only" for="subscribe2">Email address</label>
+                  <input type="email" class="form-control form-control-lg" id="subscribe2" placeholder="Enter email" name="subscribe2" required="">
+                  <i class="fa fa-envelope form-control-feedback"></i>
+                </div>
+                <button type="submit" class="btn btn-lg btn-gray-transparent btn-animated margin-clear ml-3">Submit <i class="fa fa-send"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section end -->
