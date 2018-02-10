@@ -41,5 +41,7 @@ module ArtistsPlace
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    config.action_mailer.asset_host = 'https://www.artistsplace.com.au'
+
   end
 end

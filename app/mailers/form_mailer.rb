@@ -9,6 +9,6 @@ class FormMailer < ActionMailer::Base
     
   def support_request(support_json, user)
     @support=JSON.parse(support_json).with_indifferent_access
-    mail(subject: 'Artists Place Support Request')   
+    mail(to: @support[:email], subject: 'Artists Place Support Request')   
   end
 end

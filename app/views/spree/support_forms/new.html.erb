@@ -3,7 +3,6 @@
 <section class="main-container">
   <div class="container">
     <div class="row">
-    <%= flash[:recaptcha_error] %>
       <!-- main start -->
       <!-- ================ -->
       <div class="main col-lg-8 space-bottom">
@@ -58,15 +57,7 @@
               <li><i class="fa fa-mobile pr-10 pl-1"></i><abbr title="Phone">M:</abbr> (123) 456-7890</li>
               <li><i class="fa fa-envelope pr-10"></i><a href="mailto:info@idea.com">info@artistsplace.com</a></li>
             </ul>
-            <ul class="social-links circle small margin-clear clearfix animated-effect-1">
-              <li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-              <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
-              <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-              <li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-              <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-              <li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
-              <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-            </ul>
+            <%= render partial: 'spree/shared/social' %>
             <div class="separator-2 mt-20 "></div>
           </div>
         </div>
