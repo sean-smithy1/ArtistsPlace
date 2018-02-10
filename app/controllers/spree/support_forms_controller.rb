@@ -15,15 +15,15 @@ class Spree::SupportFormsController < Spree::StoreController
     if verify_recaptcha
       if @support.valid?
         FormMailer.support_request(@support.serialize, @user).deliver_later
-        flash[:success] = "Your request has been sent to our support staff"
+        flash.now[:success] = "Your request has been sent to our support staff"
         render :new
       else
         #Model errors
-        render :create
+        redirect_back(fallback_location: :new)
       end
     else
-      flash[:error] = "Recaptcha Error - Please try again"
-      render :create
+      flash.now[:error] = "There is a problem with the Recaptcha"
+      redirect_back(fallback_location: :new)
     end
   end
 
