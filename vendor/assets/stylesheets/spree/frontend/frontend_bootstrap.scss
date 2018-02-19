@@ -7,6 +7,7 @@ $text-direction: ltr;
 @import 'mixins';
 
 @import "bootstrap";
+@import "artistsplace";
 @import '1_elements';
 @import '2_layout';
 @import '3_sections';
@@ -17,5 +18,3 @@ $text-direction: ltr;
 @import '8_main-slideshow';
 @import '9_owl-carousel';
 @import '10_full-page';
-
-/*# sourceMappingURL=style.css.map */

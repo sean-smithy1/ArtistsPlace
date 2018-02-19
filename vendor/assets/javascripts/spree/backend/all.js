@@ -7,6 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require spree/backend
+// require spree/backend/spree_i18n
 
 //= require_tree .
 //= require spree/backend/spree_multi_currency
@@ -14,3 +15,4 @@
 
 //= require spree/backend/spree_bank_transfer
 //= require jquery-ui
+

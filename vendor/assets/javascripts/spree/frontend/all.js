@@ -7,10 +7,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require accounting.min
-// require spree/frontend
+//= require spree/frontend
+// require spree/frontend/spree_i18n
 
 //= require spree/frontend/spree_multi_currency
 //= require spree/frontend/spree_digital
 //= require spree/frontend/spree_auth
 //= require spree/frontend/spree_bank_transfer
 //= require jquery-ui
+

@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   # Static Content Pages
   Spree::Core::Engine.routes.draw do
     root 'home#landing'
+
+  # Need to redirect the login and Registration Paths
     get 'privacy_policy', to: 'static_pages#privacy_policy'
     get 'about', to: 'static_pages#about'
     get 'coming_soon', to: 'static_pages#coming_soon'

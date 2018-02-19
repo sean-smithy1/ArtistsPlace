@@ -6,13 +6,15 @@
 
 	<div class="panel-body white-bg bordered mb-20">
 		<div class="overlay-container">
-			<%= product_image(product, itemprop: "image") %>
-			<a class="overlay-link popup-img-single" href="<%= product_image_link(product) %>"><i class="fa fa-search-plus"></i></a>	
+			<%= link_to url do %>
+			<span class="overlay-link">Details<i class="icon-link pr-5"></i></span>
+				<%= product_image(product, itemprop: "image") %>
+			<% end %>
+
 <%-		#Find Out Spree Discount <span class="badge">30% OFF</span>  -%>
 			<div class="overlay-to-top links">
 				<span class="small">
 					<a href="#" class="btn-sm-link"><i class="fa fa-heart-o pr-10"></i>Add to Wishlist</a>
-					<a href="#" class="btn-sm-link"><i class="icon-link pr-5"></i><%= link_to 'View Details', url, itemprop: "url" %></a>
 				</span>
 			</div>
 		</div>

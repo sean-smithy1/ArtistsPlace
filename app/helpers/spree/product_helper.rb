@@ -7,13 +7,16 @@ module Spree
     end
   
     def product_size(product)
-      dimensions = product.property('size')
-      dimensions.nil? ? 'unknown' : dimensions
+      if product.master.height && product.master.width
+        return "#{product.master.height}x#{product.master.width}x#{product.master.depth} cm"
+      else
+        return 'unknown'
+      end
     end
 
-    def product_image_link(product)
+    def product_image_link(product,style)
       images=product.images
-      images.empty? ? '#' : images.first.attachment.url(:product)
+      images.empty? ? '#' : images.first.attachment.url(style)
     end
 
     def product_short_description(product)
