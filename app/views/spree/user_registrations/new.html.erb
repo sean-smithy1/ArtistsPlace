@@ -1,0 +1,18 @@
+<% @body_id = 'signup' %>
+
+<div class="pv-40 dark-translucent-bg">
+  <div class="container">
+    <div class="object-non-visible text-center" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+      <div class="form-block center-block p-30 light-gray-bg border-clear">
+        <h2 class="panel-title"><%= Spree.t(:signup) %></h2>
+        <div id="existing-customer" class="panel-body" data-hook="signup">
+          <% if flash[:alert] %>
+            <div class="alert alert-danger"><%= flash[:alert] %></div>
+          <% end %>
+          <%= render :partial => 'spree/shared/signup' %>
+        </div>
+        <p class="text-center space-top">Already have an Account? <%= link_to Spree.t(:login), spree.login_path, id: "link-to-login"%> now.</p>
+      </div>
+    </div>
+  </div>
+</div>

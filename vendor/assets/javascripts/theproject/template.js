@@ -112,7 +112,8 @@
 		//Revolution Slider 5
 		if ($(".slider-revolution-5-container").length>0) {
 			$(".tp-bannertimer").show();
-
+			
+			// This is the one Artist Place Uses
 			$('body:not(.transparent-header) .slider-revolution-5-container .slider-banner-fullscreen').revolution({
 				sliderType:"standard",
 				sliderLayout:"fullscreen",
@@ -124,7 +125,7 @@
 					onHoverStop: "off",
 					arrows: {
 						style: "hebe",
-						enable:true,
+						enable:false,
 						tmp: '<div class="tp-title-wrap"><span class="tp-arr-titleholder">{{title}}</span></div>',
 						left : {
 							h_align:"left",
@@ -154,6 +155,7 @@
 				gridwidth:1140,
 				gridheight:750
 			});
+
 			$('.transparent-header .slider-revolution-5-container .slider-banner-fullscreen').revolution({
 				sliderType:"standard",
 				sliderLayout:"fullscreen",
@@ -206,7 +208,7 @@
 					onHoverStop: "off",
 					arrows: {
 						style: "hebe",
-						enable:true,
+						enable:false,
 						tmp: '<div class="tp-title-wrap"><span class="tp-arr-titleholder">{{title}}</span></div>',
 						left : {
 							h_align:"left",
@@ -223,7 +225,7 @@
 					},
 					bullets:{
 						style:"",
-						enable:true,
+						enable:false,
 						hide_onleave:true,
 						direction:"horizontal",
 						space: 3,

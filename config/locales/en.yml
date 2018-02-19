@@ -31,4 +31,6 @@
 
 en:
   hello: "Hello world"
-  submit: "Submit"
+
+  spree:
+      submit: Submit

@@ -2,13 +2,16 @@
 	<%= link_to spree.account_path, class: "btn btn-default btn-sm" do %><span><i class="fa fa-user pr-10"></i><%= Spree.t(:my_account) %></span>
 	<% end %> 
 
-  <%= link_to spree.logout_path, class: "btn btn-default btn-sm" do %><span><i class="fa fa-lock pr-10"></i><%= Spree.t(:logout) %></span>
+  <%= link_to spree.logout_path, class: "btn btn-default btn-sm" do %>
+  	<span><i class="fa fa-lock pr-10"></i><%= Spree.t(:logout) %></span>
   <% end %>
 
 <% else %>
-
-	<%= link_to spree.signup_path, class: "btn btn-default btn-sm" do %><i class="fa fa-user pr-10"></i> Sign Up<% end %>
-
-	<%= render partial: 'spree/shared/login' %>
-
+	<%= link_to spree.signup_path, class: "btn btn-default btn-sm", id: "link-to-signup" do %>
+		<span><i class="fa fa-user-plus pr-10"></i><%= Spree.t(:signup) %></span>
+	<% end %>
+	
+	<%= link_to spree.login_path, class: "btn btn-default btn-sm", id: "link-to-login" do %>
+			<span><i class="fa fa-unlock pr-10"></i><%= Spree.t(:login) %></span>
+	<% end %>
 <% end %>
